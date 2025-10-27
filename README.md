@@ -1,46 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nitish Agrawal | CA Finalist</title>
-  <link rel="icon" href="profile.jpg" type="image/jpg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #ffffff;
       color: #333;
       scroll-behavior: smooth;
     }
 
     /* Navbar */
     .navbar {
-      background-color: white;
+      background-color: #fff;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     .navbar-brand {
-      color: #0056b3 !important;
       font-weight: 600;
+      color: #000 !important;
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
-      padding: 70px 20px 50px;
-      background-color: #fff;
+      padding: 60px 20px;
     }
 
     .hero img {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #0056b3;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border: 3px solid #000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       margin-bottom: 20px;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease;
     }
 
     .hero img:hover {
@@ -50,7 +49,6 @@
     .hero h1 {
       font-size: 1.8rem;
       font-weight: 700;
-      color: #0056b3;
     }
 
     .hero h4 {
@@ -59,30 +57,21 @@
     }
 
     .hero p {
-      font-size: 0.95rem;
-      color: #777;
+      color: #666;
     }
 
     /* Section Titles */
     .section-title {
       text-align: center;
-      color: #0056b3;
       font-weight: 600;
-      margin-bottom: 20px;
-      font-size: 1.4rem;
+      margin-bottom: 25px;
     }
 
-    /* Cards & Services */
-    .service-icon {
-      font-size: 2rem;
-      color: #0056b3;
-      margin-bottom: 10px;
-    }
-
+    /* Cards */
     .card {
       border: none;
       border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       transition: transform 0.3s;
     }
 
@@ -90,44 +79,47 @@
       transform: translateY(-5px);
     }
 
-    /* Payment */
+    /* Payment QR */
     .upi-qr {
-      max-width: 240px;
-      border: 4px solid #0056b3;
-      border-radius: 15px;
+      max-width: 220px;
+      border: 3px solid #000;
+      border-radius: 10px;
       margin-bottom: 10px;
     }
 
-    .btn-primary {
-      background-color: #0056b3;
+    /* Buttons */
+    .btn-dark {
+      background-color: #000;
       border: none;
       border-radius: 25px;
       padding: 8px 20px;
+      transition: background-color 0.3s;
     }
 
-    .btn-primary:hover {
-      background-color: #003f88;
+    .btn-dark:hover {
+      background-color: #333;
     }
 
     /* Footer */
     footer {
-      background-color: #0056b3;
-      color: white;
+      background-color: #000;
+      color: #fff;
       text-align: center;
       padding: 10px 0;
-      margin-top: 40px;
       font-size: 0.9rem;
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
       .hero img {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
       }
     }
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-light sticky-top">
     <div class="container">
@@ -135,7 +127,7 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero" data-aos="fade-up">
     <img src="profile.jpg" alt="Profile Photo">
     <h1>Nitish Agrawal</h1>
@@ -143,93 +135,59 @@
     <p>Helping clients simplify taxes & compliance</p>
   </section>
 
-  <!-- About -->
-  <section class="container py-4" id="about" data-aos="fade-up">
+  <!-- About Me -->
+  <section class="container py-4" data-aos="fade-up">
     <h2 class="section-title">About Me</h2>
     <p class="text-center">
-      I am an independent Chartered Accountancy professional dedicated to helping individuals and businesses
-      manage taxation, GST, and audit services with transparency and precision.  
-      My goal is to simplify financial processes and build long-term trust with every client.
+      I am an independent Chartered Accountancy professional offering expert tax filing, GST, and audit services.
+      My focus is on providing transparent, timely, and reliable financial solutions tailored to each client’s needs.
     </p>
   </section>
 
-  <!-- Business Ventures -->
-  <section class="container py-4" id="ventures" data-aos="fade-up">
-    <h2 class="section-title">My Business Ventures</h2>
-    <div class="row g-3">
-      <div class="col-md-4 col-12">
-        <div class="card text-center p-3">
-          <div class="service-icon">👕</div>
-          <h5>Poonam Kapda Dukan</h5>
-          <p>Textile & Garments</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-12">
-        <div class="card text-center p-3">
-          <div class="service-icon">🍽️</div>
-          <h5>Poonam Bartan Dukan</h5>
-          <p>Household Utensils & Kitchenware</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-12">
-        <div class="card text-center p-3">
-          <div class="service-icon">🌾</div>
-          <h5>Poonam Krishi Sewa Kendra</h5>
-          <p>Agricultural Tools & Services</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Services -->
-  <section class="container py-4" id="services" data-aos="fade-up">
+  <section class="container py-4" data-aos="fade-up">
     <h2 class="section-title">Services Provided</h2>
-    <div class="row text-center g-3">
+    <div class="row g-3 text-center">
       <div class="col-6 col-md-3">
         <div class="card p-3">
-          <div class="service-icon">🧾</div>
-          <h6>ITR Filing</h6>
+          <h5>🧾 ITR Filing</h5>
         </div>
       </div>
       <div class="col-6 col-md-3">
         <div class="card p-3">
-          <div class="service-icon">💰</div>
-          <h6>GST Returns</h6>
+          <h5>💰 GST Returns</h5>
         </div>
       </div>
       <div class="col-6 col-md-3">
         <div class="card p-3">
-          <div class="service-icon">📊</div>
-          <h6>Tax Audit</h6>
+          <h5>📊 Tax Audit</h5>
         </div>
       </div>
       <div class="col-6 col-md-3">
         <div class="card p-3">
-          <div class="service-icon">🏦</div>
-          <h6>Bank Audit</h6>
+          <h5>🏦 Bank Audit</h5>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Payment Section -->
-  <section class="container py-4 text-center" id="payment" data-aos="fade-up">
+  <section class="container py-4 text-center" data-aos="fade-up">
     <h2 class="section-title">Payment</h2>
-    <img src="phonepayqr.jpg" class="upi-qr" alt="UPI QR">
+    <img src="phonepayqr.jpg" alt="UPI QR" class="upi-qr">
     <p>Scan using any UPI app (PhonePe, GPay, Paytm)</p>
-    <a href="phonepayqr.jpg" download class="btn btn-primary">Download UPI QR</a>
   </section>
 
-  <!-- Contact Section -->
-  <section class="container py-4 text-center" id="contact" data-aos="fade-up">
+  <!-- Contact -->
+  <section class="container py-4 text-center" data-aos="fade-up">
     <h2 class="section-title">Contact</h2>
     <div class="d-grid gap-2 col-8 mx-auto">
-      <a href="tel:7828780780" class="btn btn-primary">📞 Call</a>
-      <a href="https://wa.me/917828780780" target="_blank" class="btn btn-primary">💬 WhatsApp</a>
-      <a href="mailto:nitishagrawal304@gmail.com" class="btn btn-primary">✉️ Email</a>
-      <a href="https://maps.app.goo.gl/enh9anWKLChdiq1P8" target="_blank" class="btn btn-primary">📍 View on Map</a>
-      <a href="https://instagram.com/nattu.780" target="_blank" class="btn btn-primary">📸 Instagram</a>
-      <button onclick="shareCard()" class="btn btn-primary">🔗 Share My Card</button>
+      <a href="tel:7828780780" class="btn btn-dark">📞 Call</a>
+      <a href="https://wa.me/917828780780" target="_blank" class="btn btn-dark">💬 WhatsApp</a>
+      <a href="mailto:nitishagrawal304@gmail.com" class="btn btn-dark">✉️ Email</a>
+      <a href="https://maps.app.goo.gl/enh9anWKLChdiq1P8" target="_blank" class="btn btn-dark">📍 View on Map</a>
+      <a href="https://instagram.com/nattu.780" target="_blank" class="btn btn-dark">📸 Instagram</a>
+      <button onclick="shareCard()" class="btn btn-dark">🔗 Share My Card</button>
     </div>
   </section>
 
