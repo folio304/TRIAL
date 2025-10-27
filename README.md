@@ -74,7 +74,7 @@
       background: white;
       border: 1px solid #e5e5e5;
       border-radius: 12px;
-      padding: 25px 20px;
+      padding: 20px;
       text-align: center;
       transition: all 0.3s ease;
     }
@@ -86,7 +86,7 @@
 
     .service-icon {
       font-size: 2rem;
-      color: gray;
+      color: #6c757d;
       margin-bottom: 10px;
     }
 
@@ -162,6 +162,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ventures">Ventures</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -173,7 +174,7 @@
     <img src="profile.jpg" alt="Profile Photo">
     <h1>Nitish Agrawal</h1>
     <h5>CA Finalist</h5>
-    <p>Helping clients simplify taxes, compliance & business growth</p>
+    <p>Providing taxation, GST, and audit solutions with a personal touch.</p>
     <div class="d-flex flex-wrap justify-content-center mt-3">
       <a href="tel:7828780780" class="btn btn-silver">📞 Call</a>
       <a href="https://wa.me/917828780780" class="btn btn-silver">💬 WhatsApp</a>
@@ -187,15 +188,9 @@
   <section id="about" class="container my-5" data-aos="fade-up">
     <h2 class="section-title">About Me</h2>
     <p class="text-center px-3">
-      I’m <strong>Nitish Agrawal</strong>, a Chartered Accountancy Finalist providing professional services in taxation, GST, and audits for individuals and businesses.
-      <br><br>
-      Alongside my professional career, I also manage multiple business ventures in Saraipali:
+      I’m <strong>Nitish Agrawal</strong>, a CA Finalist offering professional services in taxation, GST, and audits for individuals and businesses.  
+      Along with my professional journey, I also manage multiple business ventures in Saraipali.
     </p>
-    <ul class="text-center list-unstyled">
-      <li>🧵 Poonam Kapda Dukan</li>
-      <li>🍽️ Poonam Bartan Dukan</li>
-      <li>🌾 Poonam Krishi Sewa Kendra</li>
-    </ul>
   </section>
 
   <!-- Services -->
@@ -204,21 +199,21 @@
     <div class="row g-4 text-center">
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
-          <i class="bi bi-file-earmark-text service-icon"></i>
+          <i class="bi bi-receipt service-icon"></i>
           <h5>ITR Filing</h5>
           <p>Accurate and timely income tax return filing for individuals and businesses.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
-          <i class="bi bi-receipt service-icon"></i>
+          <i class="bi bi-file-earmark-spreadsheet service-icon"></i>
           <h5>GST Returns</h5>
           <p>Monthly and annual GST compliance services with expert support.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
-          <i class="bi bi-clipboard-check service-icon"></i>
+          <i class="bi bi-clipboard-data service-icon"></i>
           <h5>Tax Audit</h5>
           <p>Professional audit and verification services to ensure compliance.</p>
         </div>
@@ -228,6 +223,34 @@
           <i class="bi bi-bank service-icon"></i>
           <h5>Bank Audit</h5>
           <p>Comprehensive auditing solutions for banks and financial institutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Ventures -->
+  <section id="ventures" class="container my-5" data-aos="fade-up">
+    <h2 class="section-title">Business Ventures</h2>
+    <div class="row g-4 text-center">
+      <div class="col-12 col-md-4">
+        <div class="service-card">
+          <i class="bi bi-shop service-icon"></i>
+          <h5>Poonam Kapda Dukan</h5>
+          <p>Retail store offering a wide range of quality garments at affordable prices in Saraipali.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="service-card">
+          <i class="bi bi-cup-hot service-icon"></i>
+          <h5>Poonam Bartan Dukan</h5>
+          <p>Trusted shop for all household utensils and kitchenware essentials.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="service-card">
+          <i class="bi bi-tree service-icon"></i>
+          <h5>Poonam Krishi Sewa Kendra</h5>
+          <p>Providing agricultural products and services to support local farmers’ needs.</p>
         </div>
       </div>
     </div>
@@ -245,11 +268,10 @@
           Baloda, Saraipali, Mahasamund, C.G. 493558 📍
         </a>
       </p>
-      <p class="mt-3 mb-1"><strong>Scan to Pay</strong></p>
-      <p class="text-muted" style="font-size: 0.9rem;">Use any UPI app (PhonePe, GPay, Paytm)</p>
+      <p class="mt-3"><strong>Scan to pay using any UPI app (PhonePe, GPay, Paytm)</strong></p>
       <img src="phonepayqr.jpg" alt="UPI QR" class="qr-img">
       <div class="mt-3">
-        <a href="phonepayqr.jpg" download="NitishAgrawal_UPI_QR" class="btn btn-silver w-75">⬇️ Download UPI QR</a>
+        <a href="phonepayqr.jpg" download class="btn btn-silver w-75">⬇️ Download UPI QR</a>
       </div>
     </div>
   </section>
@@ -267,7 +289,7 @@
       if (navigator.share) {
         navigator.share({
           title: 'Nitish Agrawal | CA Finalist',
-          text: 'Check out Nitish Agrawal’s professional profile and services.',
+          text: 'Check out Nitish Agrawal’s professional and business profile.',
           url: window.location.href
         });
       } else {
