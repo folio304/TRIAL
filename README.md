@@ -21,7 +21,7 @@
 
     .navbar-brand {
       font-weight: 600;
-      color: #003366 !important;
+      color: #555 !important;
     }
 
     .hero {
@@ -35,7 +35,7 @@
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #003366;
+      border: 4px solid silver;
       margin-bottom: 20px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
@@ -50,7 +50,6 @@
     .hero h1 {
       font-size: 1.8rem;
       font-weight: 700;
-      color: #003366;
     }
 
     .hero h5 {
@@ -68,7 +67,7 @@
       font-weight: 600;
       text-align: center;
       margin-bottom: 30px;
-      color: #003366;
+      color: #333;
     }
 
     .service-card {
@@ -87,7 +86,7 @@
 
     .service-icon {
       font-size: 2rem;
-      color: #003366;
+      color: gray;
       margin-bottom: 10px;
     }
 
@@ -100,8 +99,8 @@
     }
 
     .btn-silver {
-      background-color: #003366;
-      color: white;
+      background-color: silver;
+      color: black;
       border-radius: 25px;
       padding: 10px 20px;
       margin: 5px;
@@ -110,8 +109,7 @@
     }
 
     .btn-silver:hover {
-      background-color: #0055aa;
-      color: white;
+      background-color: #b0b0b0;
     }
 
     footer {
@@ -247,9 +245,11 @@
           Baloda, Saraipali, Mahasamund, C.G. 493558 📍
         </a>
       </p>
+      <p class="mt-3 mb-1"><strong>Scan to Pay</strong></p>
+      <p class="text-muted" style="font-size: 0.9rem;">Use any UPI app (PhonePe, GPay, Paytm)</p>
       <img src="phonepayqr.jpg" alt="UPI QR" class="qr-img">
       <div class="mt-3">
-        <a href="upi://pay?pa=7828780780@upi&pn=Nitish%20Agrawal" class="btn btn-silver w-75">💰 Pay via UPI</a>
+        <a href="phonepayqr.jpg" download="NitishAgrawal_UPI_QR" class="btn btn-silver w-75">⬇️ Download UPI QR</a>
       </div>
     </div>
   </section>
