@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -26,32 +25,41 @@
 
     .hero {
       text-align: center;
-      padding: 120px 20px 60px;
+      padding: 100px 20px 50px;
       background: linear-gradient(to bottom, #ffffff, #f4f4f4);
     }
 
     .hero img {
-      width: 220px;
-      height: 220px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid silver;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
+    @media (min-width: 768px) {
+      .hero img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+
     .hero h1 {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       font-weight: 700;
     }
 
     .hero h5 {
       color: #777;
       font-weight: 500;
+      font-size: 1rem;
     }
 
     .hero p {
       color: #555;
+      font-size: 0.95rem;
     }
 
     .section-title {
@@ -65,7 +73,7 @@
       background: white;
       border: 1px solid #e5e5e5;
       border-radius: 12px;
-      padding: 25px;
+      padding: 20px;
       text-align: center;
       transition: all 0.3s ease;
     }
@@ -78,7 +86,7 @@
     .contact-info {
       background-color: #ffffff;
       border-radius: 12px;
-      padding: 30px;
+      padding: 25px 20px;
       text-align: center;
       border: 1px solid #e5e5e5;
     }
@@ -88,7 +96,9 @@
       color: black;
       border-radius: 25px;
       padding: 10px 20px;
+      margin: 5px;
       transition: all 0.3s;
+      font-size: 0.95rem;
     }
 
     .btn-silver:hover {
@@ -105,12 +115,31 @@
     }
 
     .qr-img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 8px;
       border: 1px solid #ddd;
       object-fit: cover;
-      margin-top: 10px;
+      margin-top: 15px;
+    }
+
+    /* Better spacing on small screens */
+    @media (max-width: 576px) {
+      .hero {
+        padding-top: 80px;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      .service-card {
+        padding: 18px;
+      }
+
+      .btn-silver {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -139,11 +168,11 @@
     <h1>Nitish Agrawal</h1>
     <h5>CA Finalist | Vaada & Associates</h5>
     <p>Helping clients simplify taxes & compliance</p>
-    <div class="mt-3">
-      <a href="tel:7828780780" class="btn btn-silver me-2">📞 Call</a>
-      <a href="https://wa.me/917828780780" class="btn btn-silver me-2">💬 WhatsApp</a>
-      <a href="mailto:nitishagrawal304@gmail.com" class="btn btn-silver me-2">✉️ Email</a>
-      <a href="https://www.instagram.com/nattu.780" class="btn btn-silver me-2">📸 Instagram</a>
+    <div class="d-flex flex-wrap justify-content-center mt-3">
+      <a href="tel:7828780780" class="btn btn-silver">📞 Call</a>
+      <a href="https://wa.me/917828780780" class="btn btn-silver">💬 WhatsApp</a>
+      <a href="mailto:nitishagrawal304@gmail.com" class="btn btn-silver">✉️ Email</a>
+      <a href="https://www.instagram.com/nattu.780" class="btn btn-silver">📸 Instagram</a>
       <button class="btn btn-silver" onclick="shareCard()">📤 Share My Card</button>
     </div>
   </section>
@@ -151,7 +180,7 @@
   <!-- About -->
   <section id="about" class="container my-5" data-aos="fade-up">
     <h2 class="section-title">About Me</h2>
-    <p class="text-center">
+    <p class="text-center px-3">
       I’m <strong>Nitish Agrawal</strong>, a CA Finalist and partner at <strong>Vaada & Associates</strong>.  
       Our firm provides professional services in taxation, GST, and audits for individuals and businesses.
       <br><br>
@@ -167,26 +196,26 @@
   <!-- Services -->
   <section id="services" class="container my-5" data-aos="fade-up">
     <h2 class="section-title">Our Services</h2>
-    <div class="row g-4">
-      <div class="col-md-3">
+    <div class="row g-4 text-center">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
           <h5>ITR Filing</h5>
-          <p>Accurate and on-time income tax return filing for individuals and businesses.</p>
+          <p>Accurate and timely income tax return filing for individuals and businesses.</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
           <h5>GST Returns</h5>
           <p>Monthly and annual GST compliance services with expert support.</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
           <h5>Tax Audit</h5>
-          <p>Professional audit and tax verification services to ensure compliance.</p>
+          <p>Professional audit and verification services to ensure compliance.</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
           <h5>Bank Audit</h5>
           <p>Comprehensive auditing solutions for banks and financial institutions.</p>
@@ -198,7 +227,7 @@
   <!-- Contact -->
   <section id="contact" class="container my-5" data-aos="fade-up">
     <h2 class="section-title">Contact</h2>
-    <div class="contact-info mx-auto" style="max-width: 600px;">
+    <div class="contact-info mx-auto" style="max-width: 500px;">
       <p><strong>Phone:</strong> <a href="tel:7828780780">7828780780</a></p>
       <p><strong>Email:</strong> <a href="mailto:nitishagrawal304@gmail.com">nitishagrawal304@gmail.com</a></p>
       <p>
@@ -209,7 +238,7 @@
       </p>
       <img src="phonepayqr.jpg" alt="UPI QR" class="qr-img">
       <div class="mt-3">
-        <a href="upi://pay?pa=7828780780@upi&pn=Nitish%20Agrawal" class="btn btn-silver">💰 Pay via UPI</a>
+        <a href="upi://pay?pa=7828780780@upi&pn=Nitish%20Agrawal" class="btn btn-silver w-75">💰 Pay via UPI</a>
       </div>
     </div>
   </section>
@@ -221,7 +250,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 700, once: true });
+    AOS.init({ duration: 600, once: true });
 
     function shareCard() {
       if (navigator.share) {
