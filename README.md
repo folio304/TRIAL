@@ -1,11 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nitish Agrawal | Vaada & Associates</title>
+  <title>Nitish Agrawal | CA Finalist</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
       font-family: "Poppins", sans-serif;
@@ -21,7 +21,7 @@
 
     .navbar-brand {
       font-weight: 600;
-      color: #555 !important;
+      color: #003366 !important;
     }
 
     .hero {
@@ -35,7 +35,7 @@
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid silver;
+      border: 4px solid #003366;
       margin-bottom: 20px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
@@ -50,6 +50,7 @@
     .hero h1 {
       font-size: 1.8rem;
       font-weight: 700;
+      color: #003366;
     }
 
     .hero h5 {
@@ -67,14 +68,14 @@
       font-weight: 600;
       text-align: center;
       margin-bottom: 30px;
-      color: #333;
+      color: #003366;
     }
 
     .service-card {
       background: white;
       border: 1px solid #e5e5e5;
       border-radius: 12px;
-      padding: 20px;
+      padding: 25px 20px;
       text-align: center;
       transition: all 0.3s ease;
     }
@@ -82,6 +83,12 @@
     .service-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 10px;
     }
 
     .contact-info {
@@ -93,8 +100,8 @@
     }
 
     .btn-silver {
-      background-color: silver;
-      color: black;
+      background-color: #003366;
+      color: white;
       border-radius: 25px;
       padding: 10px 20px;
       margin: 5px;
@@ -103,7 +110,8 @@
     }
 
     .btn-silver:hover {
-      background-color: #b0b0b0;
+      background-color: #0055aa;
+      color: white;
     }
 
     footer {
@@ -124,7 +132,6 @@
       margin-top: 15px;
     }
 
-    /* Better spacing on small screens */
     @media (max-width: 576px) {
       .hero {
         padding-top: 80px;
@@ -167,8 +174,8 @@
   <section class="hero" id="home" data-aos="fade-up">
     <img src="profile.jpg" alt="Profile Photo">
     <h1>Nitish Agrawal</h1>
-    <h5>CA Finalist | Vaada & Associates</h5>
-    <p>Helping clients simplify taxes & compliance</p>
+    <h5>CA Finalist</h5>
+    <p>Helping clients simplify taxes, compliance & business growth</p>
     <div class="d-flex flex-wrap justify-content-center mt-3">
       <a href="tel:7828780780" class="btn btn-silver">📞 Call</a>
       <a href="https://wa.me/917828780780" class="btn btn-silver">💬 WhatsApp</a>
@@ -182,10 +189,9 @@
   <section id="about" class="container my-5" data-aos="fade-up">
     <h2 class="section-title">About Me</h2>
     <p class="text-center px-3">
-      I’m <strong>Nitish Agrawal</strong>, a CA Finalist and partner at <strong>Vaada & Associates</strong>.  
-      Our firm provides professional services in taxation, GST, and audits for individuals and businesses.
+      I’m <strong>Nitish Agrawal</strong>, a Chartered Accountancy Finalist providing professional services in taxation, GST, and audits for individuals and businesses.
       <br><br>
-      Apart from my professional practice, I also manage multiple business ventures in Saraipali:
+      Alongside my professional career, I also manage multiple business ventures in Saraipali:
     </p>
     <ul class="text-center list-unstyled">
       <li>🧵 Poonam Kapda Dukan</li>
@@ -196,28 +202,32 @@
 
   <!-- Services -->
   <section id="services" class="container my-5" data-aos="fade-up">
-    <h2 class="section-title">Our Services</h2>
+    <h2 class="section-title">Services Offered</h2>
     <div class="row g-4 text-center">
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
+          <i class="bi bi-file-earmark-text service-icon"></i>
           <h5>ITR Filing</h5>
           <p>Accurate and timely income tax return filing for individuals and businesses.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
+          <i class="bi bi-receipt service-icon"></i>
           <h5>GST Returns</h5>
           <p>Monthly and annual GST compliance services with expert support.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
+          <i class="bi bi-clipboard-check service-icon"></i>
           <h5>Tax Audit</h5>
           <p>Professional audit and verification services to ensure compliance.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <div class="service-card">
+          <i class="bi bi-bank service-icon"></i>
           <h5>Bank Audit</h5>
           <p>Comprehensive auditing solutions for banks and financial institutions.</p>
         </div>
@@ -245,7 +255,7 @@
   </section>
 
   <footer>
-    © 2025 Vaada & Associates | Designed by Nitish Agrawal
+    © 2025 Nitish Agrawal | All Rights Reserved
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -256,7 +266,7 @@
     function shareCard() {
       if (navigator.share) {
         navigator.share({
-          title: 'Nitish Agrawal | Vaada & Associates',
+          title: 'Nitish Agrawal | CA Finalist',
           text: 'Check out Nitish Agrawal’s professional profile and services.',
           url: window.location.href
         });
