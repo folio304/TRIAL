@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
       font-family: "Poppins", sans-serif;
       background-color: #f8f9fa;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     .navbar {
@@ -25,22 +26,22 @@
 
     .hero {
       text-align: center;
-      padding: 100px 20px 60px;
-      background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+      padding: 120px 20px 60px;
+      background: linear-gradient(to bottom, #ffffff, #f4f4f4);
     }
 
     .hero img {
-      width: 160px;
-      height: 160px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid silver;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 4px solid silver;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
     .hero h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
     }
 
@@ -75,7 +76,7 @@
     }
 
     .contact-info {
-      background-color: #f8f9fa;
+      background-color: #ffffff;
       border-radius: 12px;
       padding: 30px;
       text-align: center;
@@ -102,6 +103,15 @@
       color: #555;
       margin-top: 50px;
     }
+
+    .qr-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      object-fit: cover;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -109,7 +119,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Vaada & Associates</a>
+      <a class="navbar-brand" href="#">Nitish Agrawal</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -132,7 +142,9 @@
     <div class="mt-3">
       <a href="tel:7828780780" class="btn btn-silver me-2">📞 Call</a>
       <a href="https://wa.me/917828780780" class="btn btn-silver me-2">💬 WhatsApp</a>
-      <a href="mailto:nitishagrawal304@gmail.com" class="btn btn-silver">✉️ Email</a>
+      <a href="mailto:nitishagrawal304@gmail.com" class="btn btn-silver me-2">✉️ Email</a>
+      <a href="https://www.instagram.com/nattu.780" class="btn btn-silver me-2">📸 Instagram</a>
+      <button class="btn btn-silver" onclick="shareCard()">📤 Share My Card</button>
     </div>
   </section>
 
@@ -140,10 +152,16 @@
   <section id="about" class="container my-5" data-aos="fade-up">
     <h2 class="section-title">About Me</h2>
     <p class="text-center">
-      I’m Nitish Agrawal, a CA Finalist associated with <strong>Vaada & Associates</strong>.  
-      Our firm specializes in delivering reliable financial, tax, and audit services.  
-      We are committed to simplifying compliance for individuals and businesses while ensuring accuracy and transparency in every report we deliver.
+      I’m <strong>Nitish Agrawal</strong>, a CA Finalist and partner at <strong>Vaada & Associates</strong>.  
+      Our firm provides professional services in taxation, GST, and audits for individuals and businesses.
+      <br><br>
+      Apart from my professional practice, I also manage multiple business ventures in Saraipali:
     </p>
+    <ul class="text-center list-unstyled">
+      <li>🧵 Poonam Kapda Dukan</li>
+      <li>🍽️ Poonam Bartan Dukan</li>
+      <li>🌾 Poonam Krishi Sewa Kendra</li>
+    </ul>
   </section>
 
   <!-- Services -->
@@ -183,8 +201,16 @@
     <div class="contact-info mx-auto" style="max-width: 600px;">
       <p><strong>Phone:</strong> <a href="tel:7828780780">7828780780</a></p>
       <p><strong>Email:</strong> <a href="mailto:nitishagrawal304@gmail.com">nitishagrawal304@gmail.com</a></p>
-      <p><strong>Address:</strong> Baloda, Saraipali, Mahasamund, C.G. 493558</p>
-      <a href="https://wa.me/917828780780" class="btn btn-silver mt-3">💬 Message on WhatsApp</a>
+      <p>
+        <strong>Address:</strong> 
+        <a href="https://maps.app.goo.gl/enh9anWKLChdiq1P8" target="_blank">
+          Baloda, Saraipali, Mahasamund, C.G. 493558 📍
+        </a>
+      </p>
+      <img src="phonepayqr.jpg" alt="UPI QR" class="qr-img">
+      <div class="mt-3">
+        <a href="upi://pay?pa=7828780780@upi&pn=Nitish%20Agrawal" class="btn btn-silver">💰 Pay via UPI</a>
+      </div>
     </div>
   </section>
 
@@ -195,7 +221,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 700, once: true });
+
+    function shareCard() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Nitish Agrawal | Vaada & Associates',
+          text: 'Check out Nitish Agrawal’s professional profile and services.',
+          url: window.location.href
+        });
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link copied! You can share it manually.');
+      }
+    }
   </script>
 </body>
 </html>
